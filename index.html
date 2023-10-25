@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Prolfile Template</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: row;
+            height: 100vh;
+            width: 100wh;
+        }
+
+    .one {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-right: 2px solid black;
+    }
+    
+    .two {
+        width: 100%;
+        width: 100%;
+        border-right: 2px solid black;
+    }
+    
+    .three {
+        width: 50%;
+        height: 100%;
+        border-right: 2px solid black;
+    }
+
+    .name {
+        display: flex;
+        flex-direction: column;
+        grid-column: 1;
+        grid-row: 2;
+        margin: 10%;
+    }
+
+    .surname {
+        display: flex;
+        flex-direction: column;
+        grid-column: 2;
+        grid-row: 2;
+        margin: 10%;
+    }
+
+    .mobilenumber {
+        display: flex;
+        flex-direction: column;
+        grid-column: 1/ 3;
+        grid-row: 3;
+        margin: 5%;
+    }
+
+    .addressline1 {
+        display: flex;
+        flex-direction: column;
+        grid-column: 1/ 3;
+        grid-row: 4;
+        margin: 5%;
+    }
+    
+    .addressline2 {
+        display: flex;
+        flex-direction: column;
+        grid-column: 1/ 3;
+        grid-row: 5;
+        margin: 5%;
+    }
+
+    .postcode {
+        display: flex;
+        flex-direction: column;
+        grid-column: 1/ 3;
+        grid-row: 6;
+        margin: 5%;
+    }
+    
+    .region {
+        display: flex;
+        flex-direction: column;
+        grid-column: 1/ 3;
+        grid-row: 7;
+        margin: 5%;
+    }
+
+    .area {
+        display: flex;
+        flex-direction: column;
+        grid-column: 1/ 3;
+        grid-row: 8;
+        margin: 5%;
+    }
+
+    .emailaddress {
+        display: flex;
+        flex-direction: column;
+        grid-column: 1/ 3;
+        grid-row: 9;
+        margin: 5%;
+    }
+
+    .education {
+        display: flex;
+        flex-direction: column;
+        grid-column: 1/ 3;
+        grid-row: 10;
+        margin: 5%;
+    }
+
+    .county {
+        display: flex;
+        flex-direction: column;
+        grid-column: 1;
+        grid-row: 11;
+        margin: 10%;
+    }
+
+    .state {
+        display: flex;
+        flex-direction: column;
+        grid-column: 2;
+        grid-row: 11;
+        margin: 10%;
+    }
+
+    .saveprofile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        grid-column: 1/ 3;
+        grid-row: 12;
+        margin: 10%;
+    }
+    
+    .editexperience {
+        display: flex;
+        flex-direction: column;
+        grid-column: 1;
+        grid-row: 1;
+        padding-top: 25%;
+        padding-left: 20%;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .experience {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        grid-column: 2;
+        grid-row: 1;
+        margin-top: 30%;
+    }
+
+    .experienceindesign {
+        display: flex;
+        flex-direction: column;
+        grid-column: 1/ 3;
+        grid-row: 2;
+        margin-top: 20%;
+        margin: 10%;
+        font-size: 12px;
+    }
+
+    .additionaldetails {
+        display: flex;
+        flex-direction: column;
+        grid-column: 1/ 3;
+        grid-row: 3;
+        margin-top: 20%;
+        margin: 10%;
+        font-size: 12px;
+    }
+
+    h1 {
+        grid-column: 1;
+        grid-row: 1;
+        margin: 10%;
+    }
+
+    form {
+        height: 100%;
+        width: 100%;
+    }
+
+    fieldset {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(12, 7%);
+        border: none;
+    }
+
+    img {
+        margin-top: 15%;
+    }
+
+    button{
+        background-color: blue;
+        border: none;
+        color: white;
+        }
+
+    @media (max-width: 680px) {
+        body {
+            flex-direction: column;
+        }
+        .one {
+            width: 100%;
+            border-top: 2px solid black; 
+        }
+
+        .two {
+            width: 100%;
+            border-top: 2px solid black; 
+        }
+
+        .three {
+            width: 100%;
+            border-top: 2px solid black; 
+        }
+
+        .experienceindesign {
+            grid-row: 3;
+        }
+
+        .additionaldetails {
+            grid-row: 5;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="one">
+        <img src="./Profile Icon.jpg" alt="profile icon" height="200px">
+        <h2>John Smith</h2>
+        <p>JohnSmith123@gmail.com</p>
+    </div>
+    <div class="two">
+        <form>
+          <fieldset>
+            <h1>Profile Settings</h1>
+             <div class="name">
+              <label>Name</label>
+              <input type="text" placeholder="First Name">
+            </div>
+            <div class="surname">
+              <label>Name</label>
+                <input type="text" placeholder="First Name">
+            </div>
+            <div class="mobilenumber">
+                <label>Mobile Number</label>
+                <input type="text" placeholder="Enter Phone Number">
+              </div>
+            <div class="addressline1">
+                <label>Address Line 1</label>
+                <input type="text" placeholder="Enter Address Line 1">
+            </div>
+            <div class="addressline2">
+                <label>Address Line 2</label>
+                <input type="text" placeholder="Enter Address Line 2">
+            </div>
+
+            <div class="postcode">
+                <label>Post Code</label>
+                <input type="text" placeholder="Enter Post Code">
+            </div>
+            
+            <div class="region">
+                <label>Region</label>
+                <input type="text" placeholder="Enter Region">
+            </div>
+
+            <div class="area">
+                <label>Area</label>
+                <input type="text" placeholder="Enter Area">
+            </div>
+
+            <div class="emailaddress">
+                <label>Email Address</label>
+                <input type="text" placeholder="Enter Email Address">
+            </div>
+
+            <div class="education">
+                <label>Education</label>
+                <input type="text" placeholder="Enter Education">
+            </div>
+
+            <div class="county">
+                <label>County</label>
+                <input type="text" placeholder="County">
+            </div>
+
+            <div class="state">
+                <label>County</label>
+                <input type="text" placeholder="State">
+            </div>
+
+            <div class="saveprofile">
+                <button>Save Profile</button>
+            </div>
+            </fieldset>
+        </form>         
+        </div>
+    </div>
+    <div class="three">
+        <form>
+            <fieldset>
+              <div class="editexperience">
+                <label>Edit Expereience</label>
+              </div>
+              <div class="experience">
+                <button>Experience</button>
+            </div>
+            <div class="experienceindesign">
+                <label>Expereience in Design</label>
+                <input type="text" placeholder="Experience">
+            </div>
+            <div class="additionaldetails">
+                <label>Additional Details</label>
+                <input type="text" placeholder="Additional Details">
+            </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
